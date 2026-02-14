@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For you, quietly</title>
+<!-- Preload critical fonts for faster rendering -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap');
 
   :root {
     --bg: #faf9f7;
@@ -41,6 +44,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 100vh;
   }
 
   /* OPENING */
@@ -467,10 +472,10 @@
 <!-- Beach: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container beach-grid">
-    <img src="photos/beach-1.jpg" alt="The beach, March 2023">
-    <img src="photos/beach-2.jpg" alt="The beach, March 2023">
-    <img src="photos/beach-3.jpg" alt="The beach, March 2023">
-    <video autoplay loop muted playsinline src="photos/beach-4.mp4"></video>
+    <img loading="lazy" src="photos/beach-1.jpg" alt="The beach, March 2023">
+    <img loading="lazy" src="photos/beach-2.jpg" alt="The beach, March 2023">
+    <img loading="lazy" src="photos/beach-3.jpg" alt="The beach, March 2023">
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/beach-4.mp4"></video>
   </div>
 </section>
 
@@ -490,17 +495,17 @@
 <!-- Abuja: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container">
-    <img src="photos/abuja-1.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-2.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-3.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-4.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-5.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-6.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-7.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-8.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-9.jpg" alt="Abuja, April 2023">
-    <img src="photos/abuja-10.jpg" alt="Abuja, April 2023">
-    <video autoplay loop muted playsinline src="photos/abuja-11.mp4"></video>
+    <img loading="lazy" src="photos/abuja-1.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-2.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-3.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-4.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-5.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-6.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-7.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-8.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-9.jpg" alt="Abuja, April 2023">
+    <img loading="lazy" src="photos/abuja-10.jpg" alt="Abuja, April 2023">
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/abuja-11.mp4"></video>
   </div>
 </section>
 
@@ -537,15 +542,15 @@
 <!-- In Between: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container">
-    <img src="photos/inbetween-1.jpg" alt="April – November 2023">
-    <video autoplay loop muted playsinline src="photos/inbetween-2.mp4"></video>
-    <img src="photos/inbetween-3.jpg" alt="April – November 2023">
-    <video autoplay loop muted playsinline src="photos/inbetween-4.mp4"></video>
-    <video autoplay loop muted playsinline src="photos/inbetween-5.mp4"></video>
-    <img src="photos/inbetween-6.jpg" alt="April – November 2023">
-    <img src="photos/inbetween-7.jpg" alt="April – November 2023">
-    <img src="photos/inbetween-8.jpg" alt="April – November 2023">
-    <img src="photos/inbetween-9.jpg" alt="April – November 2023">
+    <img loading="lazy" src="photos/inbetween-1.jpg" alt="April – November 2023">
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/inbetween-2.mp4"></video>
+    <img loading="lazy" src="photos/inbetween-3.jpg" alt="April – November 2023">
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/inbetween-4.mp4"></video>
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/inbetween-5.mp4"></video>
+    <img loading="lazy" src="photos/inbetween-6.jpg" alt="April – November 2023">
+    <img loading="lazy" src="photos/inbetween-7.jpg" alt="April – November 2023">
+    <img loading="lazy" src="photos/inbetween-8.jpg" alt="April – November 2023">
+    <img loading="lazy" src="photos/inbetween-9.jpg" alt="April – November 2023">
   </div>
 </section>
 
@@ -565,8 +570,8 @@
 <!-- Separation: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container">
-    <img src="photos/separation-1.jpg" alt="The separation, Late 2023">
-    <img src="photos/separation-2.jpg" alt="The separation, Late 2023">
+    <img loading="lazy" src="photos/separation-1.jpg" alt="The separation, Late 2023">
+    <img loading="lazy" src="photos/separation-2.jpg" alt="The separation, Late 2023">
   </div>
 </section>
 
@@ -586,7 +591,7 @@
 <!-- Distance: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container">
-    <video autoplay loop controls playsinline src="photos/distance-1.mp4"></video>
+    <video loading="lazy" loop controls playsinline preload="none" data-autoplay src="photos/distance-1.mp4"></video>
   </div>
 </section>
 
@@ -668,11 +673,11 @@
 <!-- Back Together: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container">
-    <video autoplay loop muted playsinline src="photos/backtogether-5.mp4"></video>
-    <video autoplay loop muted playsinline src="photos/backtogether-6.mp4"></video>
-    <img src="photos/backtogether-7.jpg" alt="Back together, April 2025">
-    <img src="photos/backtogether-8.jpg" alt="Back together, April 2025">
-    <video autoplay loop controls playsinline src="photos/backtogether-9.mp4"></video>
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/backtogether-5.mp4"></video>
+    <video loading="lazy" loop muted playsinline preload="none" data-autoplay src="photos/backtogether-6.mp4"></video>
+    <img loading="lazy" src="photos/backtogether-7.jpg" alt="Back together, April 2025">
+    <img loading="lazy" src="photos/backtogether-8.jpg" alt="Back together, April 2025">
+    <video loading="lazy" loop controls playsinline preload="none" data-autoplay src="photos/backtogether-9.mp4"></video>
   </div>
 </section>
 
@@ -693,10 +698,10 @@
 <!-- Comeback: Images Gallery -->
 <section class="image-gallery fade-in">
   <div class="gallery-container comeback-grid">
-    <img src="photos/comeback-1.jpg" alt="November 2025">
-    <img src="photos/comeback-2.jpg" alt="November 2025">
-    <img src="photos/comeback-3.jpg" alt="November 2025">
-    <img src="photos/comeback-4.jpg" alt="November 2025">
+    <img loading="lazy" src="photos/comeback-1.jpg" alt="November 2025">
+    <img loading="lazy" src="photos/comeback-2.jpg" alt="November 2025">
+    <img loading="lazy" src="photos/comeback-3.jpg" alt="November 2025">
+    <img loading="lazy" src="photos/comeback-4.jpg" alt="November 2025">
   </div>
 </section>
 
@@ -816,6 +821,42 @@ document.querySelectorAll('img').forEach(img => {
     this.style.background = 'linear-gradient(135deg, #f5f2ee 0%, #e8ddd0 100%)';
     this.style.minHeight = '100vh';
   });
+});
+
+// Smart video loading and autoplay
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const video = entry.target;
+
+    if (entry.isIntersecting) {
+      // Load video if not loaded yet
+      if (video.preload === 'none') {
+        video.preload = 'auto';
+        video.load();
+      }
+
+      // Autoplay if marked for autoplay
+      if (video.dataset.autoplay !== undefined) {
+        video.play().catch(err => {
+          // Autoplay may fail on some browsers, silently handle
+          console.log('Autoplay prevented:', err);
+        });
+      }
+    } else {
+      // Pause video when out of view to save resources
+      if (video.dataset.autoplay !== undefined && !video.paused) {
+        video.pause();
+      }
+    }
+  });
+}, {
+  threshold: 0.25, // Start loading when 25% visible
+  rootMargin: '50px' // Start loading slightly before entering viewport
+});
+
+// Observe all videos
+document.querySelectorAll('video').forEach(video => {
+  videoObserver.observe(video);
 });
 </script>
 
